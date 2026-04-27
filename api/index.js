@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 
     try {
       // Preposielame to na tvoj hlavný AWS server
-      const response = await fetch('http://13.60.201.216:5001/api/sweeps', {
+      const response = await fetch('http://13.62.102.206:5001/api/sweeps', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(radarData)
